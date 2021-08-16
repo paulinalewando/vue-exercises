@@ -1,5 +1,5 @@
 <template>
-  <!-- Refactor Heading component using render function -->
+  <!-- Refactor Heading component -->
   <Heading :level="2" />
 </template>
 
