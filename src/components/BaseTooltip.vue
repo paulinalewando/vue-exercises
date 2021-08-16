@@ -3,7 +3,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  // TODO
+};
 </script>
 
 <style></style>
