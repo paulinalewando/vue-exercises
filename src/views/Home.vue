@@ -1,5 +1,5 @@
 <template>
-  <h2>Solve exercises:</h2>
+  <h1>Solve exercises:</h1>
 </template>
 
 <script>

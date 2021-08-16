@@ -1,5 +1,4 @@
 <template>
-  <!-- Rewrite component using Composition API -->
   <div class="task-list">
     <h2>Create Task</h2>
     <form @submit.prevent>
@@ -33,40 +32,9 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import { Task } from "../types";
+import { defineComponent } from "@vue/composition-api";
 
-export default Vue.extend({
-  data() {
-    return {
-      newTask: {
-        name: "",
-        type: "personal",
-      } as Task,
-      tasks: [] as Task[],
-      listFilter: "all",
-    };
-  },
-  computed: {
-    filteredTasks(): Task[] {
-      if (this.listFilter === "done") {
-        return this.tasks.filter((item: Task) => item.isComplete === true);
-      } else if (this.listFilter === "todo") {
-        return this.tasks.filter((item: Task) => item.isComplete === false);
-      } else {
-        return this.tasks;
-      }
-    },
-  },
-  methods: {
-    addTask() {
-      this.tasks.push({
-        ...this.newTask,
-        isComplete: false,
-      });
-    },
-  },
-});
+export default defineComponent({});
 </script>
 
 <style scoped>

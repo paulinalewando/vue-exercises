@@ -1,6 +1,6 @@
 <template>
   <!-- Refactor Heading component using render function -->
-  <Heading :level="4" />
+  <Heading :level="2" />
 </template>
 
 <script>
