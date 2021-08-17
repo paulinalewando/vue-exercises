@@ -1,5 +1,5 @@
 <template>
-  <!-- Rewrite component using Composition API -->
+  <!-- Rewrite component using Composition API (use Exercise3Solution component) -->
   <div class="task-list">
     <h2>Create Task</h2>
     <form @submit.prevent>
@@ -37,6 +37,7 @@ import Vue from "vue";
 import { Task } from "../types";
 
 export default Vue.extend({
+  name: "Exercise3",
   data() {
     return {
       newTask: {

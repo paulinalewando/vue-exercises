@@ -7,7 +7,7 @@
 import Heading from "@/components/Heading.vue";
 
 export default {
-  name: "Exercise1",
+  name: "Exercise2",
   components: {
     Heading,
   },
